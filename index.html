@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para mi Monita ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=DM+Sans:wght@400;600&display=swap');
+
+*{box-sizing:border-box}
+body{
+ margin:0;
+ background:linear-gradient(140deg,#fff0f5,#fce0ed,#eee3ff);
+ color:#68465b;
+ font-family:'DM Sans',sans-serif;
+ text-align:center;
+}
+.hero{
+ min-height:100vh;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+ padding:25px;
+}
+h1,h2{font-family:'Playfair Display',serif}
+h1{font-size:clamp(50px,10vw,85px);margin:15px}
+h2{font-size:35px}
+p{line-height:1.9}
+.heart{font-size:55px;animation:beat 1.4s infinite}
+@keyframes beat{50%{transform:scale(1.2)}}
+button{
+ border:0;border-radius:30px;
+ padding:15px 25px;
+ color:white;background:#d88aaa;
+ font-size:15px;cursor:pointer;
+ margin:12px;
+}
+button:hover{background:#bb7295}
+section{padding:70px 20px}
+.container{max-width:800px;margin:auto}
+.card{
+ background:#ffffffc9;border-radius:24px;
+ padding:25px;margin:20px auto;
+ box-shadow:0 10px 30px #ad719322;
+}
+.counter{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.counter div{background:white;padding:20px;border-radius:18px;min-width:90px}
+.counter strong{display:block;font-size:28px;color:#ca7da0}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.photo{background:white;padding:10px 10px 20px;transform:rotate(-2deg)}
+.photo:nth-child(even){transform:rotate(2deg)}
+.photo img{width:100%;height:190px;object-fit:cover;background:#f7dce8}
+.letter,.secret{display:none;text-align:left;white-space:pre-wrap;line-height:2}
+.show{display:block}
+.envelope{background:#f5c4d9;padding:25px;border-radius:20px;cursor:pointer}
+.floating{position:fixed;bottom:-30px;animation:up 5s linear forwards;pointer-events:none}
+@keyframes up{to{transform:translateY(-110vh);opacity:0}}
+footer{padding:35px}
+@media(max-width:500px){.gallery{grid-template-columns:1fr 1fr}.photo img{height:135px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+ <div class="heart">♡</div>
+ <p>UNA HISTORIA QUE SIGUE CRECIENDO</p>
+ <h1>Para Celeste</h1>
+ <p>Para mi Monita, mi persona favorita y mi casualidad más bonita.</p>
+ <button onclick="irA('historia')">Tengo algo para ti ♡</button>
+ <small>Hecho especialmente para ti, con amor.</small>
+</header>
+
+<section id="historia">
+ <div class="container">
+  <p>♡ NUESTRO TIEMPO JUNTOS ♡</p>
+  <h2>3 años y 7 meses contigo</h2>
+  <div class="heart">💕</div>
+  <p>Si pudiera volver al día en que empezó todo, volvería a elegirte.</p>
+  <div class="counter">
+   <div><strong>03</strong>AÑOS</div>
+   <div><strong>07</strong>MESES</div>
+   <div><strong>∞</strong>AMOR</div>
+  </div>
+  <p>Y todavía nos quedan muchísimas historias por vivir.</p>
+ </div>
+</section>
+
+<section>
+ <div class="container">
+  <p>📸 NUESTROS RECUERDOS</p>
+  <h2>Pedacitos de nosotros</h2>
+  <p>Cada momento contigo merece quedarse para siempre.</p>
+  
+<div class="gallery">
+  <div class="photo">
+    <img src="fotos/foto1.jpeg" alt="Recuerdo 1">
+    <p>Mi momento favorito ♡</p>
+  </div>
+
+  <div class="photo">
+    <img src="fotos/foto2.jpeg" alt="Recuerdo 2">
+    <p>Mi sonrisa favorita</p>
+  </div>
+
+  <div class="photo">
+    <img src="fotos/foto3.jpeg" alt="Recuerdo 3">
+    <p>Contigo todo es bonito</p>
+  </div>
+
+  <div class="photo">
+    <img src="fotos/foto4.jpeg" alt="Recuerdo 4">
+    <p>Y los que faltan...</p>
+  </div>
+</div>
+
+</section>
+
+<section>
+ <div class="container">
+  <p>💌 ALGO PARA TI</p>
+  <h2>Una carta para mi Monita</h2>
+  <div class="envelope" onclick="document.getElementById('carta').classList.toggle('show')">
+   <div style="font-size:60px">💌</div>
+   <h3>Toca para abrir tu carta</h3>
+  </div>
+  <div class="card letter" id="carta">
+   <h2>Mi querida Celeste ♡</h2>
+   
+<p>
+Hola, mi amor. ❤️
+
+No sé muy bien cómo empezar esta carta, pero creo que lo primero que quiero decirte es lo mucho que te amo y lo mucho que te he extrañado todo este tiempo.
+
+Aún recuerdo cuando íbamos a la prepa y nos íbamos juntos por las mañanas. Después de salir, nos quedábamos un ratito en tu casa, simplemente platicando y disfrutando de estar juntos.
+
+Siempre voy a recordar el calorcito y los nervios que sentí cuando me estabas rayando la playera. Recuerdo que te di un beso en la frente y después simplemente nos miramos. Te juro que ese momento fue de los más hermosos que he vivido y siempre lo voy a llevar guardado en mi corazón. 🥺
+
+Muchas gracias por apoyarme en todo, incluso en los momentos más difíciles. Siempre has estado conmigo y créeme que valoro muchísimo eso.
+
+Siempre vas a ser el amor de mi vida, Celeste, y quiero que lo tengas muy presente todos los días.
+
+Gracias por otro mes más que me permites estar a tu lado, por elegirme y por seguir construyendo esta historia conmigo.
+
+Te amo muchísimo, mi Monita. Nunca lo olvides.
+
+TE AMO. ❤️
+</p>
+
+   <p>Con todo mi amor,<br>Tu persona favorita ♡</p>
+  </div>
+<div style="margin-top:25px; text-align:center;">
+  <p>♡ Y antes de irte, tengo algo más para ti ♡</p>
+
+  <button onclick="sorpresaFinal()">
+    Una última cosita, Monita ❤️
+  </button>
+
+  <div id="mensajeFinal" style="
+    display:none;
+    padding:25px;
+    margin-top:20px;
+    background:#fff0f6;
+    border-radius:20px;
+    font-family:'Playfair Display',serif;
+    font-size:22px;
+    line-height:1.8;
+    color:#bb7295;
+  ">
+    Y si volviera a vivir todos esos momentos,
+    volvería a buscarte a ti. ❤️
+
+    <br><br>
+
+    Eres y siempre serás mi persona favorita.
+    Te amo, Celeste. ♡
+  </div>
+</div>
+
+ </div>
+</section>
+
+<section>
+ <div class="container">
+  <p>✨ UNA ÚLTIMA SORPRESA</p>
+  <h2>Cuando me extrañes...</h2>
+  <p>Hay algo que quiero recordarte siempre.</p>
+  <button onclick="sorpresa()">Toca aquí, Monita ♡</button>
+  <div class="card secret" id="secreto">
+   No importa cuántos kilómetros nos separen,
+   siempre voy a encontrar una razón para elegirte.
+   
+   La distancia es solo un espacio entre dos lugares,
+   nunca entre lo que siento por ti.
+   
+   Te amo, Celeste. ❤️
+  </div>
+ </div>
+</section>
+
+<footer>
+ Hecho con muchísimo amor para Celeste ♡<br>
+ 3 años, 7 meses y una historia que sigue creciendo.
+ <h2>∞</h2>
+</footer>
+
+<script>
+function irA(id){
+ document.getElementById(id).scrollIntoView({behavior:'smooth'});
+}
+function sorpresa(){
+ document.getElementById('secreto').classList.toggle('show');
+ for(let i=0;i<25;i++){
+  let h=document.createElement('div');
+  h.className='floating';
+  h.textContent=['❤️','💕','💗','✨'][Math.floor(Math.random()*4)];
+  h.style.left=Math.random()*100+'vw';
+  h.style.fontSize='25px';
+  document.body.appendChild(h);
+  setTimeout(()=>h.remove(),5000);
+ }
+}
+function sorpresaFinal(){
+  const mensaje = document.getElementById('mensajeFinal');
+
+  mensaje.style.display = 'block';
+
+  for(let i=0; i<45; i++){
+    let corazon = document.createElement('div');
+
+    corazon.className = 'floating';
+    corazon.textContent = ['❤️','💕','💗','💖','✨'][
+      Math.floor(Math.random()*5)
+    ];
+
+    corazon.style.left = Math.random()*100 + 'vw';
+    corazon.style.fontSize = (20 + Math.random()*20) + 'px';
+
+    document.body.appendChild(corazon);
+
+    setTimeout(() => corazon.remove(), 5000);
+  }
+}
+
+</script>
+</body>
+</html>
